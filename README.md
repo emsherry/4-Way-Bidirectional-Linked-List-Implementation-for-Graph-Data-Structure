@@ -34,25 +34,37 @@ The following example demonstrates the usage of this Graph data structure:
 
 int main()
 {
+
 int totalVertices = 4;
+
 Graph *graph;
+
 graph = createGraph(totalVertices);
 
 
 addEdge(graph, 0, 1);
+
 addEdge(graph, 0, 2);
+
 addEdge(graph, 0, 3);
+
 addEdge(graph, 1, 3);
+
 addEdge(graph, 2, 3);
+
 
 printGraph(graph);
 
 deleteUser(graph, 2);
+
 displayUsers(graph);
+
 
 searchUser(graph, 3);
 
+
 }
+
 
 This code creates a new graph with 4 vertices, adds edges between vertices, prints the adjacency list representation of the graph, deletes user with index 2, displays all users in the graph, and searches for the user with index 3.```
 
